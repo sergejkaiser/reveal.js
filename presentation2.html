@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Final Presentation -- Large Data">
+		<meta name="author" content="Moritz Baten and Sergej Kaiser">
+		<title> Large Data Visualisation -- Tapestry Complex 1575-1775 </title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<style>
+		html, body
+		{
+		  height: 100%;
+		}
+		ul {
+    padding :20px;
+    background:none;
+    list-style:none;
+    margin:20px;
+}
+.reveal section img { background:none; border:none; box-shadow:none; }
+.imgContainer{
+    float:left;
+}
+li{
+    margin-top: 10px;
+    /*border:1px solid grey;*/
+}
+
+li:first-child {
+    margin-top:0;
+}
+		</style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1> Visualizing the Tapestry Complex <h2> Brussels-Antwerpen-Oodenede
+				</h2> 1575-1750</section>
+<section> <blockqoute> "Design is a search problem"</blockquote> <br><small>-- Mike Bostok  </small></br></section>
+
+<section>
+	<h2> Step 1: Exploring the Data &amp; User  </h2>
+       <ul>
+
+				 <li> Dataset: Access file with several sheets</li>
+				 <li> Most important: Nodelist, Edgelist</li>
+				 <li> Auxillary sheets: Work, Group, Place, Art-Work</li>
+			 </ul>
+		 </section>
+		 <section>
+<h2> User Task &amp; Goal description</h2>
+ <ul>
+	 <li> Maptap team interdisciplinary team</li>
+		 <li> Main contact two Phd students of history</li>
+			 <li> Main task research historical resources about the Tapestry complex. </li>
+			 <li> Goal: Porvide insides about interesting actors </li>
+ </ul>
+
+		 </section>
+
+<section>
+	<h2> Edgelist</h2>
+	<table width="75%" height="750px"><caption align="bottom"> </caption>
+<tbody>
+<tr>
+<th> Variable names</th>
+<th># categories</th>
+<th>data type</th>
+<th>missing (in %)</th>
+</tr>
+<tr>
+<td align="right">ID_sender</td>
+<td align="right">2291</td>
+<td>numerical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">ID_target</td>
+<td align="right">2290</td>
+<td>numerical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Rol1_Rol2</td>
+<td align="right">5377</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Source</td>
+<td align="right">836</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Year</td>
+<td align="right">122</td>
+<td>numerical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Naam1</td>
+<td align="right">2291</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Rol1</td>
+<td align="right">204</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Rol2</td>
+<td align="right">201</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Naam2</td>
+<td align="right">2290</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">TypeActe</td>
+<td align="right">20</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">City</td>
+<td align="right">14</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+</tbody>
+</table>
+</section>
+		 <section>
+			 	<h2> Nodelist</h2>
+<table border="1" ><caption align="bottom">
+<p style="text-align: center;"><em> Table 2: Nodes to Network </em></p>
+</caption>
+<tbody>
+<tr>
+<th> Variable names</th>
+<th># cat.</th>
+<th>data type</th>
+<th>missing ( %)</th>
+</tr>
+<tr>
+<td align="right">Id</td>
+<td align="right">4097.00</td>
+<td>numerical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Nodes</td>
+<td align="right">3864.00</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Label</td>
+<td align="right">3864.00</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">First_Name</td>
+<td align="right">940.00</td>
+<td>categorical</td>
+<td align="right">0.02</td>
+</tr>
+<tr>
+<td align="right">Surname</td>
+<td align="right">2014.00</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">Parishes</td>
+<td align="right">22.00</td>
+<td>categorical</td>
+<td align="right">0.84</td>
+</tr>
+<tr>
+<td align="right">Parishes_1</td>
+<td align="right">16.00</td>
+<td>categorical</td>
+<td align="right">0.95</td>
+</tr>
+<tr>
+<td align="right">Parishes_2</td>
+<td align="right">9.00</td>
+<td>categorical</td>
+<td align="right">1.00</td>
+</tr>
+<tr>
+<td align="right">Parishes_4</td>
+<td align="right">10.00</td>
+<td>categorical</td>
+<td align="right">0.98</td>
+</tr>
+<tr>
+<td align="right">Gender</td>
+<td align="right">2.00</td>
+<td>categorical</td>
+<td align="right">0.00</td>
+</tr>
+<tr>
+<td align="right">GebJaar</td>
+<td align="right">128.00</td>
+<td>numerical</td>
+<td align="right">0.84</td>
+</tr>
+<tr>
+<td align="right">MarJaar</td>
+<td align="right">62.00</td>
+<td>numerical</td>
+<td align="right">0.95</td>
+</tr>
+<tr>
+<td align="right">MarJaar2</td>
+<td align="right">16.00</td>
+<td>numerical</td>
+<td align="right">1.00</td>
+</tr>
+<tr>
+<td align="right">MarJaar3</td>
+<td align="right">2.00</td>
+<td>numerical</td>
+<td align="right">1.00</td>
+</tr>
+<tr>
+<td align="right">BurJaar</td>
+<td align="right">55.00</td>
+<td>numerical</td>
+<td align="right">0.98</td>
+</tr>
+<tr>
+<td align="right">Parishes_3_Parochie</td>
+<td align="right">2.00</td>
+<td>cateogrical</td>
+<td align="right">1.00</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+	<section>
+			<section>
+				<h2>Distribution of Edges and Roles </h2> ´
+			</section>
+			<section>
+				<img data-src="histogram.png" width="47%" >
+				<img data-src="graph2.png"width="47%">
+			</section>
+
+	</section>
+
+
+		 <section>
+			 <h2>Step 2: Exploring the graphical space </h2> Five Design Sheet
+		 </section>
+
+		 </section>
+	 		<section id="fds-1_1-1_2">
+		 		<h3>FDS I </h3>
+		 <img data-src="fds_one.jpg"width="50%" height="50%">
+	 	<img data-src="fds_one_two.jpg" width="50%" height="50%">
+</section>
+
+
+			 <section id="fds-2-3">
+					 <h3>FDS II &amp;FDS III  </h3>
+					<img data-src="images/fds_two.jpg" width="50%" height="50%">
+					 <img data-src="images/fds_three.jpg" width="50%" height="50%">
+			</section>
+
+		 	<section id="fds-4-5">
+					 <h3>FDS IV &amp; FDS V </h2> <img align="left" data-src="fds_four.jpg" width="50%" height="48%"> <img align="right" data-src="fds_five.jpg" width="50%" height="48%">
+
+			</section>
+
+
+
+					<section>
+							<section>
+								<h3>Step 3: Implementation Node-Link Diagram</h3>
+						 		<img data-src="try2004.png">
+					 		</section>
+							<section>
+									<h3>Hairball problem</h3>
+									<img data-src="try2005.png">
+					 		</section>
+					 	</section>
+
+								 <section>
+				 				 		<h3>Step 3: Implementation Radial Layout </h3>
+									 <img  data-src="images/Radial_layout.png" width="75%" height="85%">
+								</section>
+
+						<section date-state="edgebundling">
+							<h3>Step 4: Target Design Radial Layout with Edgebundling </h3>
+
+						</section>
+			</div>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				width: 1400,
+ 			height: 1000,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+				//	{ src: 'lib/js/d3.v3.min.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+</script>
+
+
+
+
+	</body>
+</html>
