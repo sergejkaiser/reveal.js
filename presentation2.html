@@ -67,7 +67,7 @@ li:first-child {
 	 <li> Maptap team interdisciplinary team</li>
 		 <li> Main contact two Phd students of history</li>
 			 <li> Main task research historical resources about the Tapestry complex. </li>
-			 <li> Goal: Porvide insides about interesting actors </li>
+			 <li> Goal: Provide insights about relevant actors </li>
  </ul>
 
 		 </section>
@@ -77,10 +77,10 @@ li:first-child {
 	<table width="75%" height="750px"><caption align="bottom"> </caption>
 <tbody>
 <tr>
-<th> Variable names</th>
-<th># categories</th>
+<th> Variable </th>
+<th># cat.</th>
 <th>data type</th>
-<th>missing (in %)</th>
+<th>missing ( %)</th>
 </tr>
 <tr>
 <td align="right">ID_sender</td>
@@ -217,6 +217,20 @@ li:first-child {
 <td>categorical</td>
 <td align="right">0.98</td>
 </tr>
+</tbody>
+</table>
+</section>
+		 <section>
+			 	<h2> Nodelist II</h2>
+<table border="1" ><caption align="bottom">
+<p style="text-align: center;"><em> Table 2: Nodes to Network </em></p>
+</caption>
+<tbody>
+<tr>
+<th> Variable names</th>
+<th># cat.</th>
+<th>data type</th>
+<th>missing ( %)</th>
 <tr>
 <td align="right">Gender</td>
 <td align="right">2.00</td>
@@ -268,8 +282,8 @@ li:first-child {
 				<h2>Distribution of Edges and Roles </h2> ´
 			</section>
 			<section>
-				<img data-src="histogram.png" width="47%" >
-				<img data-src="graph2.png"width="47%">
+				<img data-src="images/histogram.png" width="47%" >
+				<img data-src="images/graph2.png"width="47%">
 			</section>
 
 	</section>
@@ -282,19 +296,21 @@ li:first-child {
 		 </section>
 	 		<section id="fds-1_1-1_2">
 		 		<h3>FDS I </h3>
-		 <img data-src="fds_one.jpg"width="50%" height="50%">
-	 	<img data-src="fds_one_two.jpg" width="50%" height="50%">
+		 <img data-src="images/fds_one.jpg"width="50%" height="50%">
+	 	<img data-src="images/fds_one_two.jpg" width="50%" height="50%">
 </section>
 
 
 			 <section id="fds-2-3">
 					 <h3>FDS II &amp;FDS III  </h3>
-					<img data-src="images/fds_two.jpg" width="50%" height="50%">
-					 <img data-src="images/fds_three.jpg" width="50%" height="50%">
+					<img align="left" data-src="images/fds_two.jpg" width="50%" height="50%">
+					 <img align="right" data-src="images/fds_three.jpg" width="50%" height="50%">
 			</section>
 
 		 	<section id="fds-4-5">
-					 <h3>FDS IV &amp; FDS V </h2> <img align="left" data-src="fds_four.jpg" width="50%" height="48%"> <img align="right" data-src="fds_five.jpg" width="50%" height="48%">
+					 <h3>FDS IV &amp; FDS V </h2> <img align="left" data-src="images/
+				fds_four.jpg" width="50%" height="48%"> <img align="right" data-src="images/
+				fds_five.jpg" width="50%" height="48%">
 
 			</section>
 
@@ -303,11 +319,11 @@ li:first-child {
 					<section>
 							<section>
 								<h3>Step 3: Implementation Node-Link Diagram</h3>
-						 		<img data-src="try2004.png">
+						 		<img data-src="images/try2004.png">
 					 		</section>
 							<section>
 									<h3>Hairball problem</h3>
-									<img data-src="try2005.png">
+									<img data-src="images/try2005.png">
 					 		</section>
 					 	</section>
 
@@ -319,6 +335,10 @@ li:first-child {
 						<section date-state="edgebundling">
 							<h3>Step 4: Target Design Radial Layout with Edgebundling </h3>
 
+	 <img  data-src="images/final.jpg" width="75%" height="85%">
+	 <ul> <li> Edge Bundles: Coreness of nodes </li>
+	 	<li>
+	  Click interaction highlight connected nodes</li></ul>
 						</section>
 			</div>
 		</div>
@@ -335,7 +355,7 @@ li:first-child {
 				progress: true,
 				history: true,
 				center: true,
-				width: 1400,
+				width: 1200,
  			height: 1000,
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
@@ -348,15 +368,11 @@ li:first-child {
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-				//	{ src: 'lib/js/d3.v3.min.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'lib/js/d3.v3.min.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 </script>
-
-
-
-
 	</body>
 </html>
